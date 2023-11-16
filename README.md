@@ -12,14 +12,15 @@ O Sky Music Converter é uma aplicação simples e eficiente projetada para conv
 
 
 
-   Recursos Principais
+Recursos Principais
 - Conversão Rápida: Converta facilmente sequências de comandos musicais para o formato desejado.
 - Personalização de Velocidade: Ajuste a velocidade da conversão para atender às suas preferências.
 - Personalização de Delay inicial: Ajuste o Delay inicial que levará para iniciar a tocar a musica.
 - Copia do texto diretamente: Permite copiar o texto diremante para aplicar ao Automatic Mouse And Keyboard sem necessidade de salvar o arquivo.
 - Exportação Simples: Salve suas conversões em arquivos de texto para uso posterior.
-
-   Como Usar
+   
+   
+Como Usar
 - No site https://sky-music.herokuapp.com/songLibrary.html e baixe uma música no formato .TXT json
 - Abra o aplicativo 
 - Carregue sua musica em arquivo TXT usando o botão de Escolher arquivo.
@@ -31,10 +32,12 @@ O Sky Music Converter é uma aplicação simples e eficiente projetada para conv
 - Edite a sua gravação via notepad e cole o código copiado do Sky Music Converter.
 - inicie a Hotkey e vá para tela do Sky: Children of the Light.
 - curta a musica!
-
-
-   Desenvolvimento
+   
+   
+Desenvolvimento
 - Este aplicativo foi desenvolvido por [MonsterEvil0666]. Qualquer feedback ou sugestão é bem-vindo. Sinta-se à vontade para contribuir para melhorias.
-
-   Licença
+   
+   
+Licença
 - Este projeto não é licenciado - consulte o arquivo LICENSE.md para detalhes.
+   
