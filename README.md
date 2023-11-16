@@ -10,15 +10,15 @@ O Sky Music Converter é uma aplicação simples e eficiente projetada para conv
 
 
 
-Recursos Principais
-Conversão Rápida: Converta facilmente sequências de comandos musicais para o formato desejado.
+   Recursos Principais
 
-Personalização de Velocidade: Ajuste a velocidade da conversão para atender às suas preferências.
-Personalização de Delay inicial: Ajuste o Delay inicial que levará para iniciar a tocar a musica.
-Copia do texto diretamente: Permite copiar o texto diremante para aplicar ao Automatic Mouse And Keyboard sem necessidade de salvar o arquivo.
-Exportação Simples: Salve suas conversões em arquivos de texto para uso posterior.
+- Conversão Rápida: Converta facilmente sequências de comandos musicais para o formato desejado.
+- Personalização de Velocidade: Ajuste a velocidade da conversão para atender às suas preferências.
+- Personalização de Delay inicial: Ajuste o Delay inicial que levará para iniciar a tocar a musica.
+- Copia do texto diretamente: Permite copiar o texto diremante para aplicar ao Automatic Mouse And Keyboard sem necessidade de salvar o arquivo.
+- Exportação Simples: Salve suas conversões em arquivos de texto para uso posterior.
 
-Como Usar
+   Como Usar
 Abra o aplicativo.
 Carregue sua sequência de comandos musicais usando o botão de upload.
 Ajuste a velocidade conforme desejado, 100% (padrão).
