@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sky Music Converter</title>
+
+    <style> 
+      body {  /* BackGround */
+        margin: 0;
+        overflow: hidden;
+        background: url('Resource/SkyBackground.png') no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      #fileContent { /* Caixa do texto importado */
+        margin-top: 15px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        max-width: 700px;
+        height: 150px;
+        overflow: auto;
+        white-space: pre-wrap; /* Auto Quebra linha do texto da caixa */
+        background-color: rgba(255, 255, 255, 0.6); /* Cor branca com 60% de opacidade */
+      }
+      #clearButton { /* Botão Limpar */
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      #delayLabel { /* Caixa de Delay */
+        position: absolute;
+        top: 229px;
+        left: 10px;
+        margin-bottom: 10px;
+        width: 100px;
+      }
+      #delayInput { /* Texto Título - Delay */
+        margin-left: 90px;
+        margin-right: 10px;
+        width: 70px;
+      }
+      #convertButton, #copyButton { /* Espaçamentos para Botões Convert e Copy */
+        margin-top: 5px;
+        margin-right: 10px;
+      }
+      #convertedText { /* Caixa de Texto Convertido */
+        margin-top: 15px;
+        margin-left: 3px;
+        margin-right: 3px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        max-width: 700px;
+        height: 220px;
+        overflow: auto;
+        white-space: pre-wrap; /* Auto Quebra linha do texto da caixa */
+        background-color: rgba(255, 255, 255, 0.6); /* Cor branca com 60% de opacidade */
+      }
+      label, select, #speedDisplay {
+        position: fixed; /* Posiciona o elemento de forma fixa na janela */
+        top: 7px; /* Distância de 10 pixels do topo */
+        right: 200px; 
+      }
+      #speedSelect {
+        position: fixed; /* Posiciona o elemento de forma fixa na janela */
+        top: 7px; /* Distância de 10 pixels do topo */
+        right: 140px; 
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <button id="reloadButton" onclick="reloadApp()" style="position: absolute; top: 5px; right: 10px; margin-bottom: 10px;">Limpar</button>
+    
+    <input type="file" id="fileInput" style="position: absolute; top: 5px; left: 10px; margin-bottom: 10px;">
+    <br>
+    <pre id="fileContent"></pre>
+
+    <label for="speedSelect">Velocidade:</label>
+    <select id="speedSelect">
+      <option value="50">50%</option>
+      <option value="60">60%</option>
+      <option value="70">70%</option>
+      <option value="80">80%</option>
+      <option value="90">90%</option>
+      <option value="100" selected>100%</option>
+      <option value="110">110%</option>
+      <option value="120">120%</option>
+      <option value="130">130%</option>
+      <option value="140">140%</option>
+      <option value="150">150%</option>
+    </select>
+    <div id="speedDisplay"></div>
+
+    <label for="delayInput" id="delayLabel">Start Delay: </label>
+    <input type="number" id="delayInput" value="1500">
+
+    <button id="convertButton" onclick="convertToHotkey()">Converter para Hotkey</button>
+    <button id="copyButton" onclick="copyConvertedText()">Copiar Conversão</button>
+    <button id="saveButton" onclick="saveToFile()">Salvar Conversão</button>
+
+    <pre id="convertedText"></pre>
+
+    <div id="developerTag" style="position: fixed; bottom: 7px; right: 10px; color: white;"></div>
+
+    <script src="index.js"></script>
+    <script src="./renderer.js"></script>
+    
+    <script>
+
+      //Conteúdo da função Salvar Arquivo
+
+      function saveToFile() {
+        const convertedText = document.getElementById('convertedText').innerText;
+
+        // Cria um objeto Blob contendo o texto
+        const blob = new Blob([convertedText], { type: 'text/plain' });
+
+        // Cria um objeto URL a partir do Blob
+        const url = URL.createObjectURL(blob);
+
+        // Cria um elemento de link temporário
+        const link = document.createElement('a');
+
+        // Configura o URL do link para o URL do Blob
+        link.href = url;
+
+        // Especifica o nome do arquivo a ser baixado
+        link.download = 'converted_text.txt';
+
+        // Adiciona o link ao corpo do documento
+        document.body.appendChild(link);
+
+        // Aciona o clique no link
+        link.click();
+
+        // Remove o link do corpo do documento
+        document.body.removeChild(link);
+
+        // Libera o objeto URL
+        URL.revokeObjectURL(url);
+      }
+    
+      //Conteúdo da função Limpar
+      function reloadApp() {
+        location.reload();
+      }
+
+      // Preencher dinamicamente a tag de desenvolvedor
+      document.getElementById('developerTag').innerText = 'Desenvolvido por: MonsterEvil0666';
+
+    </script>
+  </body>
+</html>

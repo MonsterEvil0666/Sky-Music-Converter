@@ -1,0 +1,34 @@
+{
+  "name": "sky-music-converter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-packager ."
+  },
+  "author": "Monster Evil",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^27.1.0",
+    "electron-builder": "^24.6.4",
+    "electron-packager": "^17.1.2"
+  },
+  "build": {
+    "appId": "com.v1.SkyMusicConverter",
+    "productName": "Sky Music Converter",
+    "directories": {
+      "output": "build"
+    },
+    "mac": {
+      "icon": "./Resource/SkyIcon.png"
+    },
+    "win": {
+      "icon": "./Resource/SkyIcon.png"
+    },
+    "linux": {
+      "icon": "./Resource/SkyIcon.png"
+    }
+  }
+}
