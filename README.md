@@ -1,6 +1,8 @@
 # Sky Music Converter
 
-![image](https://github.com/MonsterEvil0666/Sky-Music-Converter/assets/115512214/d504f140-8d9f-4d6a-8106-48e4f4f2c0a6)
+
+![image](https://github.com/MonsterEvil0666/Sky-Music-Converter/assets/115512214/61a090e1-171e-4731-8804-633e1606f2d3)
+
 
 
 O Sky Music Converter é uma aplicação simples e eficiente projetada para converter sequências de comandos musicais em um formato específico para facilitar a integração com sistemas de controle de teclado.
@@ -11,7 +13,6 @@ O Sky Music Converter é uma aplicação simples e eficiente projetada para conv
 
 
    Recursos Principais
-
 - Conversão Rápida: Converta facilmente sequências de comandos musicais para o formato desejado.
 - Personalização de Velocidade: Ajuste a velocidade da conversão para atender às suas preferências.
 - Personalização de Delay inicial: Ajuste o Delay inicial que levará para iniciar a tocar a musica.
@@ -26,8 +27,8 @@ Ajuste o Delay inicial conforme desejado, 1500ms (padrão).
 Clique no botão de conversão para obter o resultado.
 Copie ou salve a conversão conforme necessário.
 
-Desenvolvimento
+   Desenvolvimento
 Este aplicativo foi desenvolvido por [MonsterEvil0666]. Qualquer feedback ou sugestão é bem-vindo. Sinta-se à vontade para contribuir para melhorias.
 
-Licença
+   Licença
 Este projeto não é licenciado - consulte o arquivo LICENSE.md para detalhes.
