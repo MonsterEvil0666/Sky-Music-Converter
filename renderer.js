@@ -52,7 +52,7 @@ function copyConvertedText() {
 function convertToHotkey(text) {
     
     // Fase 1: Deleta ',"l":2' do código
-    const regexPhase1 = /,"l":2/g;
+    const regexPhase1 = /,"l":[2-9]/g;
     const textAfterPhase1 = text.replace(regexPhase1, '');
 
     // Fase 2: Remover conteúdo entre colchetes abertos, para remoção de título
