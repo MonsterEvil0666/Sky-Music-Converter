@@ -191,5 +191,9 @@ function convertToHotkey(text) {
     const regexPhase23 = /Key Up : ([\w,.;/]+)\nKey Down : ([\w,.;/]+)/g;
     const textAfterPhase23 = textAfterPhase22.replace(regexPhase23, 'Key Down : $2\nDelay : 1 ms\nKey Up : $1');
 
-    return textAfterPhase23;
+    // Fase 24: Reorganizar "Key Up:" e "Key Down:" invertendo a ordem e inserindo "Delay : 1 ms" entre eles
+    const regexPhase24 = /Key Down : ([\w,.;/]+)\nKey Up : ([\w,.;/]+)/g;
+    const textAfterPhase24 = textAfterPhase23.replace(regexPhase24, 'Key Down : $1\nDelay : 1 ms\nKey Up : $2');
+
+    return textAfterPhase24;
 }
